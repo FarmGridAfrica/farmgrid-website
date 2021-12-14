@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
+    <!-- <script>
         if (location.protocol != 'https:') {
             location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
           }    
-        </script>  
+        </script>   -->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -27,9 +27,12 @@
     <meta property="og:image:height" content="2560">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
       <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-      
       <link href="airdrop.css" rel="stylesheet">
+      <link href="styles/bootstrap.css" rel="stylesheet">
       <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
       var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -45,32 +48,78 @@
       <!--End of Tawk.to Script-->
 </head>
 <body>
-    <div class="relative bg-gray-100 bg-height">
+    <div class="container-fluid p-0 bg-green bottom-0">
+        <nav class="navbar navbar-expand-lg navbar-light  navbar_color_back">
+            <div class="container">
+                <a class="navbar-brand logo" href="#"><img src="img/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item active">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#Community">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://airdrop.farmgrid.org" target="_blank">Airdrop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="litepaper.1.0.pdf">LitePaper</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#RoadMap">RoadMap</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://farmgrid.medium.com/" target="_blank">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-v"></i> 
+                                </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-unique dropdown_color" aria-labelledby="navbarDropdownMenuLink">
+                               <!-- <a class="dropdown-item" href="#tokenimics">Tokenomics</a> -->
+                                <a class="dropdown-item" href="index.html#Community">Contact us</a>
+                                <a class="dropdown-item" href="https://farmgrid.org" target="_blank">FarmGrid</a>
+                                <a class="dropdown-item" href="https://hackerlink.io/buidl/1435?roundProj=1030" target="_blank">Hackathon Participation</a>
+                                <a class="dropdown-item" href="index.html#presale">Join Presale</a>
+                                <a class="dropdown-item" href="FarmGridPitchDeck.pptx" >Investor Deck</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="relative bg-gray-100 ">
         <!-- <img class="mx-auto h-80 absolute left-80 top-32 img-1" src="img/airdrop/airdropbg.svg" /> -->
         <img class="mx-auto h-64 absolute right-8 top-8 md:right-56  xl:right-80 2xl:w-3/12 img-2" src="img/airdrop/airdropbg.svg" /> 
         <img class="mx-auto h-168 absolute bottom-0 img-3" src="img/airdrop/gridicon.svg" />
         <div class="container mx-auto p-4 ">
    
-        <div class=" p-4 lg:w-3/5 mx-auto  mt-10 card">
+        <div class=" p-4 lg:w-3/5 mx-auto  mt-10  my-card">
             <img class="mx-auto h-144" src="img/airdrop/airdrop.svg" />
             <p class="text-3xl text-center font-extrabold my-5">FarmGrid $GRID Token Airdrop</p>
             <p class="text-lg text-center lg:px-4">Farm Grid is a Defi yield optimization for real farm stakeholder, empowering farmers with block chain technology and promoting one health. Farm grid is airdropping 0.27% of the $GRID token to her supporters worth $51,000. Token to be deposited on your wallet on Public sale day. Only participants that completed the steps will be awarded. </p>
-            <div class="rounded-lg bg-primary mx-auto w-40 text-center p-2 my-5"> <a class="text-white text-lg " href="http://airdrop.farmgrid.org/">Join Airdrop</a> </div>
+            <div class="rounded-lg bg-green mx-auto w-40 text-center p-2 my-4"> <a class="text-white text-lg " href="http://airdrop.farmgrid.org/">Join Airdrop</a> </div>
         </div>
 
-        <div class=" p-4 lg:w-3/5 mx-auto  mt-10 mb-4 z-10 card-2">
+        <div class=" p-4 lg:w-3/5 mx-auto  mt-10 mb-4 z-10 my-card-2">
             <div class="flex flex-row justify-center items-center space-x-3 ">
                     <p class="text-3xl  font-extrabold my-5 ">Pre-sale is Live </p>
-                   <div class="bg-primary rounded-full h-4 w-4 self-center mt-2">
+                   <div class="bg-green rounded-full h-4 w-4 self-center mt-2">
                 </div>
               </div>
           <p class="text-lg text-center lg:px-4">Be an early investor. In The Spirit Of Growth And In Line With Our Road Map, Presale Of The $GRID Token is ongoing. Fill The Farm Grid Interest Form To Get A Chance To Participate In The Presale Exercise.</p>
-            <div class="rounded-lg bg-primary mx-auto w-40 text-center p-2 my-5"> <a class="text-white text-lg " href="https://my.forms.app/form/618fe74c8c8fa556a1a0c500">Join Pre-sale</a> </div>
+            <div class="rounded-lg bg-green mx-auto w-40 text-center p-2 my-4"> <a class="text-white text-lg " href="https://my.forms.app/form/618fe74c8c8fa556a1a0c500">Join Pre-sale</a> </div>
         </div>
     </div>
-    <div class="h-16 bg-green-400 mt-8 footer">
-        <p class="text-lg text-center text-white py-4" >Copyright <span>&copy;</span>2021 by FarmGrid</p>
-    </div>
+</div>
+<div class="h-16 bg-gray-50 footer">
+    <p class="text-lg text-center font-bold text-green py-4" >Copyright <span>&copy;</span>2021 by FarmGrid</p>
 </div>
 </body>
 </html>
